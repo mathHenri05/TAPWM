@@ -1,0 +1,12 @@
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.csprojAssemblyReference.cache
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.Form1.resources
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.Properties.Resources.resources
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.csproj.GenerateResource.cache
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.csproj.CoreCompileInputs.cache
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\bin\Debug\PClasse.exe.config
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\bin\Debug\PClasse.exe
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\bin\Debug\PClasse.pdb
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.frmMensalista.resources
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.exe
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.pdb
+C:\Users\0031432312004\Desktop\PClasse TAPWM\PClasse\PClasse\obj\Debug\PClasse.frmHorista.resources
