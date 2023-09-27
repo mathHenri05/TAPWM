@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar Triângulo</title>
+</head>
+<body>
+    <script>
+        var a, b, c;
+
+        function verificarTriangulo() {
+            a = parseFloat(prompt('Digite o valor do lado a:'));
+            b = parseFloat(prompt('Digite o valor do lado b:'));
+            c = parseFloat(prompt('Digite o valor do lado c:'));
+
+            if (a < b + c && b < a + c && c < a + b) {
+                if (a === b && b === c) {
+                    alert('TRIÂNGULO EQUILÁTERO');
+                } else {
+                    if (a === b || a === c || b === c) {
+                        alert('TRIÂNGULO ISÓSCELES');
+                    } else {
+                        alert('TRIÂNGULO ESCALENO');
+                    }
+                }
+            } else {
+                alert('NÃO É UM TRIÂNGULO.');
+            }
+        }
+
+        verificarTriangulo();
+    </script>
+</body>
+</html>
