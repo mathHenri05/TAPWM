@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Conta {
+            constructor(nomeCorrentista, banco, numeroConta, saldo) {
+                this.nomeCorrentista = nomeCorrentista;
+                this.banco = banco;
+                this.numeroConta = numeroConta;
+                this.saldo = saldo;
+            }
+
+            getNomeCorrentista() {
+                return this.nomeCorrentista;    
+            }
+
+            setNomeCorrentista(nomeCorrentista) {
+                this.nomeCorrentista = nomeCorrentista;
+            }
+
+            getBanco() {
+                return this.banco;
+            }
+
+            setBanco(banco) {
+                this.banco = banco;
+            }
+
+            getNumeroConta() {
+                return this.numeroConta;
+            }
+
+            setNumeroConta(numeroConta) {
+                this.numeroConta = numeroConta;
+            }
+
+            getSaldo() {
+                return this.saldo;
+            }
+
+            setSaldo(saldo) {
+                this.saldo = saldo;
+            }
+            }
+
+            class CorrenteComSaldoEspecial extends Conta {
+            constructor(nomeCorrentista, banco, numeroConta, saldo, limite) {
+                super(nomeCorrentista, banco, numeroConta, saldo);
+                this.limite = limite;
+            }
+            }
+
+            class PoupancaComJurosDataVencimento extends Conta {
+            constructor(nomeCorrentista, banco, numeroConta, saldo, juros, dataVencimento) {
+                super(nomeCorrentista, banco, numeroConta, saldo);
+                this.juros = juros;
+                this.dataVencimento = dataVencimento;
+            }
+            }
+
+            const correnteComSaldoEspecial = new CorrenteComSaldoEspecial(
+            "João Silva",
+            "Banco do Brasil",
+            "123456-7",
+            1000,
+            -500
+            );
+
+            const poupancaComJurosDataVencimento = new PoupancaComJurosDataVencimento(
+            "Maria Souza",
+            "Caixa Econômica Federal",
+            "987654-3",
+            5000,
+            "0.5%",
+            "01/01/2024"
+            );
+
+            console.log(correnteComSaldoEspecial);
+            console.log(poupancaComJurosDataVencimento);
+
+    </script>
+</body>
+</html>
