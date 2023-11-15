@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Text e Checkbox</title>
+    <script>
+        function transformarTexto() {
+            var inputTexto = document.getElementById('inputTexto');
+            var checkboxMaiusculo = document.getElementById('checkboxMaiusculo');
+            var checkboxMinusculo = document.getElementById('checkboxMinusculo');
+
+            if (checkboxMaiusculo.checked) {
+                inputTexto.value = inputTexto.value.toUpperCase();
+            }
+
+            if (checkboxMinusculo.checked) {
+                inputTexto.value = inputTexto.value.toLowerCase();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="inputTexto" name="inputTexto">
+        <input type="checkbox" id="checkboxMaiusculo" name="checkboxMaiusculo" onclick="transformarTexto()">
+        <label for="checkboxMaiusculo">Maiúsculas</label>
+        <input type="checkbox" id="checkboxMinusculo" name="checkboxMinusculo" onclick="transformarTexto()">
+        <label for="checkboxMinusculo">Minúsculas</label>
+    </form>
+</body>
+</html>
