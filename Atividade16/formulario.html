@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function validateForm(event) {
+ event.preventDefault(); // Para a submissão padrão do formulário
+  
+ var form = document.nomeform;
+  
+ var name = form.elements["nome"].value;
+ var email = form.elements["email"].value;
+ var comment = form.elements["comentario"].value;
+ var search = form.elements["pesquisa"].value;
+  
+ // Verificar se o nome possui pelo menos 10 caracteres
+ if (name.length < 10) {
+    alert("O nome deve ter pelo menos 10 caracteres.");
+    return;
+ }
+  
+ // Verificar se o email contém os caracteres @ e .
+ if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+    alert("O email deve conter os caracteres @ e .");
+    return;
+ }
+  
+ // Verificar se o comentário possui pelo menos 20 caracteres
+ if (comment.length < 20) {
+    alert("O comentário deve ter pelo menos 20 caracteres.");
+    return;
+ }
+  
+ // Verificar se a pesquisa foi selecionada
+ if (search === "") {
+    alert("Que bom que você voltou a visitar esta página!");
+ } else {
+    alert("Volte sempre à está página!");
+ }
+}
+</script>
+
+</head>
+<body>
+
+<form name="nomeform" onsubmit="validateForm(event)">
+ Nome: <input type="text" name="nome"><br>
+ Email: <input type="text" name="email"><br>
+ Comentário: <textarea name="comentario"></textarea><br>
+ <br>
+ Pesquisa:
+ <br>
+ <br>
+ Primeira vez nesta página?
+ <br>
+ <br>
+ <input type="radio" name="pesquisa" value="">Sim
+ <input type="radio" name="pesquisa" value="">Não<br>
+ <input type="
