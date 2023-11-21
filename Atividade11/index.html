@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Função para retornar o maior número
+        function maiorNumero(num1, num2, num3, num4) {
+            let maior = num1;
+
+            if (num2 > maior)
+                maior = num2;
+
+            if (num3 > maior)
+                maior = num3;
+
+            if (num4 > maior)
+                maior = num4;
+
+            return maior;
+        }
+
+        //Função para colocar os números em ordem crescente
+        function ordemCrescente(num1, num2, num3, num4) {
+            let numArray = [num1, num2, num3, num4];
+            numArray.sort(function(a, b) {
+                return a - b;
+            });
+
+            return numArray;
+        }
+    </script>
+</body>
+</html>
