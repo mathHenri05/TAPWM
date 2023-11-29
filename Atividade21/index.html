@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Torneio de Vôlei</title>
+</head>
+<body>
+
+    <form id="formulario" onsubmit="return criarobjeto()">
+        <label for="nome">Nome da pessoa:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="nascimento">Data de nascimento:</label><br>
+        <input type="date" id="nascimento" name="nascimento" required><br>
+        <label for="matricula">Matriculado regularmente:</label><br>
+        <input type="radio" id="sim" name="matricula" value="sim" required>
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="nao" name="matricula" value="nao">
+        <label for="nao">Não</label><br>
+        <label for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco" required><br>
+        <input type="submit" value="Inscrever-se">
+    </form>
+
+    <script>
+        function validaridade(idade) {
+            return idade >= 7 && idade <= 17;
+        }
+
+        function criarobjeto() {
+            event.preventDefault();
+            var nome = document.getElementById("nome").value;
+            var nascimento = document.getElementById("nascimento").value;
+            var matricula = document.querySelector('input[name="matricula"]:checked').value;
+            var endereco = document.getElementById("endereco").value;
+            var idade = new Date().getFullYear() - new Date(nascimento).getFullYear();
+
+            if (validaridade(idade) && matricula === "sim") {
+                var inscrito = {
+                    nome: nome,
+                    nascimento: nascimento,
+                    matriculado: matricula,
+                    endereco: endereco
+                };
+                alert("Nome da pessoa – " + inscrito.nome + " – Data Nascimento – " + inscrito.nascimento + " – Endereço – " + inscrito.endereco + " – Está inscrito no torneio");
+            } else {
+                alert("Nome da pessoa – " + nome + " – Data Nascimento – " + nascimento + " – Endereço – " + endereco + " – Não está inscrito no torneio porque não atende aos requisitos");
+            }
+        }
+    </script>
+
+</body>
+</html>
