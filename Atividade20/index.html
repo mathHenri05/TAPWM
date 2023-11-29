@@ -1,0 +1,103 @@
+[14:25] GABRIEL CHRISTOVAM LIMA DE MENEZES
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// questão 1
+var ObjLivro1 = {
+    Titulo: "Dom Casmurro",
+    Autor: "Machado de Assis"
+}
+ 
+alert(ObjLivro1.Titulo+ +ObjLivro1.Autor);
+alert(`${ObjLivro1.Titulo} ${ObjLivro1.Autor}`);
+alert(JSON.stringfy(ObjLivro1))
+ 
+var ObjLivro2 = {};
+ObjLivro2.Titulo = "Dom Casmurro";
+ObjLivro2.Autor = "Machado de Assis";
+ 
+var ObjLivro3 = new Object();
+ObjLivro3.Titulo = "Dom Casmurro";
+ObjLivro3.Autor = "Machado de Assis";
+ 
+ 
+function Livro(_Titulo,_Autor)
+{
+    this.Titulo = _Titulo;
+    this.Autor = _Autor
+}
+var objLivro4 = new Livro ('Dom Casmurro', "Machado de Assis");
+ 
+class Livro1 {
+    constructor(titulo,autor){
+        this.titulo = titulo;
+        this.autor = autor;
+    }
+}
+ 
+const objLivro5 = new Livro1("Titulo do Livro", "Autor do Livro");
+ 
+//questâo 2
+var i = 1 + "2" + 3;
+for (j = 0; j < 10; j++){
+    alert(`${i}${j}`);
+    if(j === 5)
+    break;
+} 
+ 
+ 
+// questão 5
+function Ordena (n1, n2, n3){
+    var matriz = [n1, n2, n3];
+    matriz.sort(function(a,b) {b-a});
+    return matriz;
+}alert (Ordena2(5,2,2));
+ 
+function Ordena2 (n1, n2, n3){
+    var matriz = [n1, n2, n3];
+    matriz.sort(function(a,b) {b-a});
+    matriz.reverse();
+    return matriz;
+}alert (Ordena2(5,2,2));
+ 
+function Ordena (n1,n2,n3){
+    let maior = Math.max(n1,n2,n3);
+    let menor = Math.min(n1,n2,n3);
+    let meio;
+    if(n1 !== maior && n2 !== menor){
+        meio = n1;
+    }else if(n2 !== maior && n2 !== menor){
+        meio = n2;
+    }else {
+        meio = n3;
+    }
+    return `${maior} ${meio} ${menor}`;
+} alert(Ordena(10,5,8));
+ 
+ 
+// questão 6
+var testo =`{"descricao": "Produto A", "codigo": 123}`;
+var objeto = JSON.parce(texto);
+ 
+alert (objeto.descricao+" "+objeto.codigo);
+ 
+ 
+// questao 9
+var entrada = 1 + 2 + "3" + 4 ;
+var sainda = "";
+for (var i = 0; i < 4; i++){
+    saida += entrada + i + "  ";
+}alert (saida);
+ 
+ 
+</script>
